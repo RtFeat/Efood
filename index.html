@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZOOPET</title>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="header__logo"></a>
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+            <li class="header__item"><a class="header__link" href="#catalog">Каталог</a></li>
+            <li class="header__item"><a class="header__link" href="#app">App</a></li>
+            <li class="header__item">
+                <a class="header__link" href="#"><form class="form-for-search" action="">
+                    <input class="form-search" type="text" placeholder="Найти">
+                </form></a>
+            </li>
+            <li class="header__item">
+                <button class="header__korz" id="open-modal1"></button>
+                <div id="modal1">
+                    <div id="modal-content1">
+                        <div class="korz_main">
+                            <button id="purchase-button" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                            <h2 class="korz_korz">Корзина</h2>
+                            <button class="but2close" id="close-modal1">x</button>
+                        </div>
+                        <div class="menu__food12">
+                            <div class="menu_food_item">
+                                <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                <div class="price_food info_food_salad">1 192₽</div>
+                            <div class="count1">
+                                <input type="number" class="count__input" min="1" max="100" value="1">
+                            </div>
+                            </div>
+                            <div class="menu_food_item">
+                                <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                <div class="price_food">1 299₽</div>
+                                <div class="count1">
+                                    <input type="number" class="count__input" min="1" max="100" value="1">
+                                </div>
+                            </div>
+                            <div class="menu_food_item">
+                                <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                <div class="price_food">1 489₽</div>
+                                <div class="count1">
+                                    <input type="number" class="count__input" min="1" max="100" value="1">
+                                </div>
+                            </div>
+                            <div class="menu_food_item">
+                                <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                <div class="count1">
+                                    <input type="number" class="count__input" min="1" max="100" value="1">
+                                </div>
+                            </div>
+                            <div class="menu_food_item">
+                                <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                <div class="price_food">3 450₽</div>
+                                <div class="count1">
+                                    <input type="number" class="count__input" min="1" max="100" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="header__item"><a class="header__link header__link__but" id="login-btn" href="#">Войти</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <section>
+        <div class="main">
+            <div class="main__text">
+                <h1 class="main__tittle"><font color="#FF7A50">Диетотерапия</font><br><font color="#FF7A50"></font><font color="#363853"> Важная Часть</font><font color="#FF7A50"> Лечения</font></h1>
+                <p class="main__desk">Ветеренарные Диеты Помогут поддержать Здоровье Кошек И Собак с Диагностированными Заболвеваниями</p>
+                <p class="main_btn_2"><a class="main__btn" href="#catalog">Перейти в каталог</a>
+                    <a class="main__btn_1" href="#nas">Узнать больше</a></p>
+            </div>
+            <div class="main__image">
+                <img class="main__img" src="images/gallery.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sect_1" id="catalog">
+        <h2 class="title"><font color="#363853">Каталог</font><font color="#FF7A50"> Товаров</font></h2>
+        <div class="menu__food">
+            <div class="menu_food_item">
+                <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                <div class="price_food info_food_salad">1 192₽</div>
+                <div class="button_action">
+                    <p class="main_btn__1 info_food_salad"><a class="main___btn" href="#" id="open-modal12">Добавить</a>
+                    <div id="modal12">
+                        <div id="modal-content12">
+                            <div class="korz_main">
+                                <button id="purchase-button1" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                                <h2 class="korz_korz">Корзина</h2>
+                                <button class="but2close" id="close-modal12">x</button>
+                            </div>
+                            <div class="menu__food12">
+                                <div class="menu_food_item">
+                                    <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food info_food_salad">1 192₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 299₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 489₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                    <div class="price_food">3 450₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="menu_food_item">
+                <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                <div class="price_food">1 299₽</div>
+                <div class="button_action">
+                    <p class="main_btn__1 info_food_salad"><a class="main___btn" href="#" id="open-modal123">Добавить</a>
+                    <div id="modal123">
+                        <div id="modal-content123">
+                            <div class="korz_main">
+                                <button id="purchase-button12" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                                <h2 class="korz_korz">Корзина</h2>
+                                <button class="but2close" id="close-modal123">x</button>
+                            </div>
+                            <div class="menu__food12">
+                                <div class="menu_food_item">
+                                    <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food info_food_salad">1 192₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 299₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 489₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                    <div class="price_food">3 450₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="menu_food_item">
+                <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                <div class="price_food">1 489₽</div>
+                <div class="button_action">
+                    <p class="main_btn__1 info_food_salad"><a class="main___btn" href="#" id="open-modal1234">Добавить</a>
+                    <div id="modal1234">
+                        <div id="modal-content1234">
+                            <div class="korz_main">
+                                <button id="purchase-button123" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                                <h2 class="korz_korz">Корзина</h2>
+                                <button class="but2close" id="close-modal1234">x</button>
+                            </div>
+                            <div class="menu__food12">
+                                <div class="menu_food_item">
+                                    <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food info_food_salad">1 192₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 299₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 489₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                    <div class="price_food">3 450₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="menu_food_item">
+                <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                <div class="button_action">
+                    <p class="main_btn__1 info_food_salad"><a class="main___btn" href="#" id="open-modal12345">Добавить</a>
+                    <div id="modal12345">
+                        <div id="modal-content12345">
+                            <div class="korz_main">
+                                <button id="purchase-button1234" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                                <h2 class="korz_korz">Корзина</h2>
+                                <button class="but2close" id="close-modal12345">x</button>
+                            </div>
+                            <div class="menu__food12">
+                                <div class="menu_food_item">
+                                    <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food info_food_salad">1 192₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 299₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 489₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                    <div class="price_food">3 450₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="menu_food_item">
+                <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                <div class="price_food">3 450₽</div>
+                <div class="button_action">
+                    <p class="main_btn__1 info_food_salad"><a class="main___btn" href="#" id="open-modal123456">Добавить</a>
+                    <div id="modal123456">
+                        <div id="modal-content123456">
+                            <div class="korz_main">
+                                <button id="purchase-button12345" type="button" onclick="alert('Спасибо за покупку, мы напишем вам в скором времени')">Купить</button>
+                                <h2 class="korz_korz">Корзина</h2>
+                                <button class="but2close" id="close-modal123456">x</button>
+                            </div>
+                            <div class="menu__food12">
+                                <div class="menu_food_item">
+                                    <div class="food_burger burger_mid"><img class="img_korm_1" src="images/korm1.png" alt=""></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food info_food_salad">1 192₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_2" src="images/korm2.png" alt="pizza_star"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 299₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_3" src="images/korm3.png" alt="sandwichStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food">1 489₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger food_burger_black"><img class="img_korm_4" src="images/korm4.png" alt="asianStar"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм ProBalance</div>
+                                    <div class="price_food food_burger_black_lil_l">1 890₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                                <div class="menu_food_item">
+                                    <div class="food_burger"><img class="img_korm_5" src="images/korm5.png" alt="korm5"></div>
+                                    <div class="info_food .food_burger_black_lil_l">Сухой корм AlphaPet</div>
+                                    <div class="price_food">3 450₽</div>
+                                    <div class="count1">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect_4" id="app">
+        <div class="sect_-4">
+            <div class="sect_4_1">
+                <div class="sect_4_1.download">Скачивай Наше<naf class="col"> Приложение</naf>
+                </div>
+                <div class="sect_4_1.info">Это упростит Ваш заказ, а также подстроит предпрочтения под ваш вкус, и вы никогда не потеряете нужный вам товар
+                    <div class="sect_4_1.picturs">
+                        <div class="sect_4_1.pictures"><a href="https://www.apple.com/app-store/"><img src="images/App%20Store.png" alt=""></a></div>
+                        <div class="sect_4_1.picture"><a href="https://www.play.google.com"><img src="images/Google%20Play.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sect_4_2">
+                <div class="sect_4_2_pictures"><img src="images/picture_phone.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect_5" id="nas">
+        <div class="slider">
+            <div class="item">
+                <div class="sect_5_main_top">
+                    <h1 class="sect_5_head">О Нас и наших
+                        <naf class="color_sect_5">партнерах</naf>
+                    </h1>
+                    <div class="sect_5_main">
+                        <div class="sect_5_mainpicture"><img src="images/cat.png" alt="Rectangle"></div>
+                        <div class="sect_main_info">ZOOPET является одной из самых популярных площадок по продаже еды для
+                            домашних животных, мы проконсультируем вас и дадим необходимый справочник. Наши партнеры
+                            (Avangard, Dinamo, FonBet) помогают нам в этом, благодаря им о нас узнают много людей
+                            <div class="sect_5_main_for_info">
+                                <div class="sect_5_main_info_dop">ZOOPETⒸ
+                                    <div class="dop"><br>Animals lover</div>
+                                </div>
+                                <a>
+                                    <div class="sect_5_ArrowLeft"><img class="next" onclick="nextSlide()" src="images/ArrowLeft.png" alt=""></div>
+                                </a>
+                                <a>
+                                    <div class="sect_5_ArrowRight"><img class="previous" onclick="previousSlide()" src="images/ArrowRight.png" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sect_5_main_top">
+                    <h1 class="sect_5_head">Мнения специалистов
+                        <naf class="color_sect_5">о нашем корме</naf>
+                    </h1>
+                    <div class="sect_5_main">
+                        <div class="sect_5_mainpicture"><img class="vetirinar" src="images/vetirinar.jpg" alt="Rectangle"></div>
+                        <div class="sect_main_info">Цеолит – кормовая добавка для кошек и собак
+                            Питательные вещества, поступающие в организм с едой, взаимодействуют между собой, пищевая добавка усиливает или, напротив, снижает скорость реакции, тем самым обеспечивает заданную эффективность корма ...
+                            <div class="sect_5_main_for_info">
+                                <div class="sect_5_main_info_dop">ZOOPETⒸ
+                                    <div class="dop"><br>Animals lover</div>
+                                </div>
+                                <a>
+                                    <div class="sect_5_ArrowLeft"><img class="next" onclick="nextSlide()" src="images/ArrowLeft.png" alt=""></div>
+                                </a>
+                                <a>
+                                    <div class="sect_5_ArrowRight"><img class="previous" onclick="previousSlide()" src="images/ArrowRight.png" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="sect_7">
+        <div class="sect_7_main">
+            <div class="sect_7_1">
+                <ul class="sect_7_1_1">
+                    <li class="sect_7_1_efood">ZOO<nuf class="color_efood">PET</nuf>
+                    </li>
+                    <li class="sect_7_1_list_1"><img class="sect_7_1_images" src="images/Location.jpg" alt="">
+                        <nuf class="pad">Россия, Омск</nuf>
+                    </li>
+                    <li class="sect_7_1_list_1"><img class="sect_7_1_images" src="images/Calling.jpg" alt="">
+                        <nuf class="pad">8-800-555-35-35</nuf>
+                    </li>
+                    <li class="sect_7_1_list_1"><img class="sect_7_1_images" src="images/Message.jpg" alt="">
+                        <nuf class="pad">support@zoopet.com</nuf>
+                    </li>
+                    <li class="sect_7_1_img"><a href="https://ru-ru.facebook.com/"><img src="images/facebook.png" alt=""></a><a href="https://twitter.com/?lang=ru"><img src="images/twitter.png" alt=""></a><a href="https://www.instagram.com/"><img
+                        src="images/instagram.png" alt=""></a><a href="https://ru.pinterest.com/"><img src="images/pinterest.png" alt=""></a></li>
+            </ul>
+            </div>
+            <div class="sect_7_2">
+                <ul class="sect_7_2_1">
+                    <li class="sect_7_1_bold">Сервис</li>
+                    <a href="#catalog"><li class="sect_7_1_list">Каталог</li></a>
+                </ul>
+            </div>
+            <div class="sect_7_3">
+                <ul class="sect_7_3_1">
+                   <li class="sect_7_1_bold">Компания</li>
+                   <a href="#nas"><li class="sect_7_1_list">О Нас</li></a>
+                   <a href="#nas"><li class="sect_7_1_list">Наши партнеры</li></a>
+                </ul>
+            </div>
+            <div class="sect_7_4">
+                <ul class="sect_7_4_1">
+                    <li class="sect_7_1_bold">Помощь</li>
+                    <a href="https://www.purinaone.ru/cat/catmag/nutrition/feeding-indoor-cat"><li class="sect_7_1_list">Справочник</li></a>
+                    <a href="mailto:zoopet@gmail.com"><li class="sect_7_1_list">Обратная связь</li></a>
+                </ul>
+            </div>
+            <div class="sect_7_5">
+                <ul class="sect_7_5_1">
+                    <li class="sect_7_1_bold">Ресурсы</li>
+                    <a href="https://www.apple.com/app-store/"><li class="sect_7_1_list">Скачать</li></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <form class="form1" id="login-form">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+            <button class="but1" type="submit">Войти</button>
+            <span class="close-button">&times;</span>
+        </form>
+        <div id="response"></div>
+    </div>
+</div>
+<script>
+    var modal = document.getElementById("login-modal");
+    var btn = document.getElementById("login-btn");
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+</script>
+<script>
+    var closeButtons = document.querySelectorAll(".close-button");
+    closeButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var modal = button.closest(".modal");
+            modal.style.display = "none";
+        });
+    });
+</script>
+<script>
+    const openModalBtn = document.getElementById('open-modal1');
+    const closeModalBtn = document.getElementById('close-modal1');
+    const modal1 = document.getElementById('modal1');
+
+    openModalBtn.addEventListener('click', () => {
+        modal1.style.display = 'block';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        modal1.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal1) {
+            modal1.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    const openModalBtn1 = document.getElementById('open-modal12');
+    const closeModalBtn1 = document.getElementById('close-modal12');
+    const modal12 = document.getElementById('modal12');
+
+    openModalBtn1.addEventListener('click', () => {
+        modal12.style.display = 'block';
+    });
+
+    closeModalBtn1.addEventListener('click', () => {
+        modal12.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal12) {
+            modal12.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    const openModalBtn12 = document.getElementById('open-modal123');
+    const closeModalBtn12 = document.getElementById('close-modal123');
+    const modal123 = document.getElementById('modal123');
+
+    openModalBtn12.addEventListener('click', () => {
+        modal123.style.display = 'block';
+    });
+
+    closeModalBtn12.addEventListener('click', () => {
+        modal123.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal123) {
+            modal123.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    const openModalBtn123 = document.getElementById('open-modal1234');
+    const closeModalBtn123 = document.getElementById('close-modal1234');
+    const modal1234 = document.getElementById('modal1234');
+
+    openModalBtn123.addEventListener('click', () => {
+        modal1234.style.display = 'block';
+    });
+
+    closeModalBtn123.addEventListener('click', () => {
+        modal1234.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal1234) {
+            modal1234.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    const openModalBtn1234 = document.getElementById('open-modal12345');
+    const closeModalBtn1234 = document.getElementById('close-modal12345');
+    const modal12345 = document.getElementById('modal12345');
+
+    openModalBtn1234.addEventListener('click', () => {
+        modal12345.style.display = 'block';
+    });
+
+    closeModalBtn1234.addEventListener('click', () => {
+        modal12345.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal12345) {
+            modal12345.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    const openModalBtn12345 = document.getElementById('open-modal123456');
+    const closeModalBtn12345 = document.getElementById('close-modal123456');
+    const modal123456 = document.getElementById('modal123456');
+
+    openModalBtn12345.addEventListener('click', () => {
+        modal123456.style.display = 'block';
+    });
+
+    closeModalBtn12345.addEventListener('click', () => {
+        modal123456.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal123456) {
+            modal123456.style.display = 'none';
+        }
+    });
+</script>
+<script>
+        
+    let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+    showSlides(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+    function nextSlide() {
+       showSlides(slideIndex += 1);
+    }
+
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+    function previousSlide() {
+       showSlides(slideIndex -= 1);  
+    }
+
+/* Устанавливаем текущий слайд: */
+    function currentSlide(n) {
+       showSlides(slideIndex = n);
+    }
+
+/* Функция перелистывания: */
+    function showSlides(n) {
+/* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+       let slides = document.getElementsByClassName("item");
+
+/* Проверяем количество слайдов: */
+        if (n > slides.length) {
+           slideIndex = 1
+        }
+        if (n < 1) {
+           slideIndex = slides.length
+        }
+
+/* Проходим по каждому слайду в цикле for: */
+        for (let slide of slides) {
+           slide.style.display = "none";
+        }
+/* Делаем элемент блочным: */
+        slides[slideIndex - 1].style.display = "flex";    
+    }
+</script>
+</html>
